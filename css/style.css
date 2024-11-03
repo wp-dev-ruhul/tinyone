@@ -1,0 +1,423 @@
+/* Google Font Lato and quicksand css link */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Google Font Lato and quicksand css link */
+
+/* Root color and font family */
+:root {
+    --primary-font: "PT Sans", sans-serif;
+    --primary-color: #010101;
+    --bg-color: #fcdb00;
+}
+
+
+/* Root color and font family */
+/* basic css desing file */
+/* Target all browsers */
+input[type=number] {
+    -moz-appearance: textfield;
+    /* For Firefox */
+    -webkit-appearance: none;
+    /* For Chrome, Safari, Edge */
+    appearance: none;
+    /* For modern browsers */
+}
+
+/* Optional: Hide the up/down arrows in WebKit-based browsers (like Chrome) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+/* check box color change  */
+input[type="checkbox"]:checked {
+    accent-color: var(--logo-color);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+span,
+table,
+footer,
+nav,
+div,
+section {
+    padding: 0;
+    margin: 0;
+}
+
+/* basic css style desing ended */
+
+/* hero section css part start  */
+.hero {
+    background-color: var(--bg-color);
+    padding: 60px 0px;
+    overflow: hidden;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-brand {
+    font-size: var(--primary-font);
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 20px;
+    color: var(--primary-color);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: var(--primary-font);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 20px;
+    color: var(--primary-color);
+    padding: 0px 40px;
+}
+
+.hero_left_main .hero_title {
+    font-size: var(--primary-font);
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+    color: var(--primary-color);
+}
+
+.hero_left_main .hero_sub {
+    font-size: var(--primary-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--primary-color);
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+.hero_left_main .hero_txt {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--primary-color);
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+.hero_left_main .photo_box img {
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+header .corusal_1,
+header .corusal_2 {
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0px 5px;
+}
+
+header .corusal_2 {
+    background-color: #feed80;
+}
+
+
+@media screen and (max-width:576px) {
+    .hero {
+
+        padding: 20px 0px;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        margin-top: 20px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+
+        font-size: 16px;
+        padding: 7px;
+    }
+
+    .hero_left_main .hero_sub {
+        width: 100%;
+    }
+
+    .hero_left_main .hero_txt {
+        width: 100%;
+    }
+}
+
+/* hero section css part End */
+/* featur section css part start  */
+.f_main {
+    overflow-x: hidden;
+}
+
+.f_main .f_page_title {
+    font-size: var(--primary-font);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.f_main .f_page_sub {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--primary-color);
+    margin-top: 20px;
+    max-width: 576px;
+    margin: 20px auto;
+}
+
+
+
+.f_content_main .f_c_main .f_c_t {
+    font-size: var(--primary-font);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+.f_content_main .f_c_main .f_c_s {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #898989;
+    margin-top: 15px;
+}
+
+/* featur section css part End */
+/* footer section css part start  */
+
+footer {
+    background-color: black;
+    padding: 50px 0px;
+}
+
+footer .footer_top_main .footer_title {
+    font-size: var(--primary-font);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--bg-color);
+}
+
+footer .footer_top_main .footer_sub {
+    font-size: var(--primary-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #898989;
+    margin: 30px auto;
+    padding: 0px 220px;
+}
+
+.footer_input_main input {
+    border: none;
+    outline: none;
+    width: 40%;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-right: 20px;
+
+}
+
+.footer_input_main input::placeholder {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #898989;
+
+}
+
+.footer_input_main button {
+    width: 120px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #010101;
+}
+
+.footer_icon ul li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    margin: 0px 15px;
+    border-radius: 10px;
+}
+
+
+.footer_icon ul li a i {
+    font-size: 30px;
+    color: var(--primary-color);
+
+
+}
+
+.f_b .f_address {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+    padding: 0px 120px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.f_e,
+.f_c {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+    display: block;
+    padding-top: 10px;
+
+}
+
+.footer_bottom {
+    margin-top: 120px !important;
+}
+
+.footer_nav ul li {
+    padding: 5px 0px !important;
+}
+
+.footer_nav ul li a {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #fff;
+
+}
+
+.copy {
+    padding: 15px 15px;
+    background-color: #898989;
+    text-align: center;
+}
+
+.copy p,
+.copy p a {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #000;
+}
+
+.copy p a {
+    color: var(--bg-color);
+}
+
+
+@media screen and (max-width:576px) {
+
+    footer .footer_top_main .footer_sub {
+
+        padding: 0px 0px;
+    }
+
+    .footer_input_main input {
+        border: none;
+        outline: none;
+        width: 60%;
+        height: 45px;
+        border-radius: 5px;
+        padding: 0px 10px;
+        margin-right: 20px;
+
+    }
+
+    .f_b .f_address {
+
+        padding: 0px 0px 0px 0px;
+    }
+
+    .footer_bottom {
+        margin-top: 60px !important;
+    }
+
+    .footer_nav {
+        text-align: center;
+    }
+
+}
+
+
+
+/* footer section css part End */
